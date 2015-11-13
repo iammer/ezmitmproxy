@@ -1,3 +1,8 @@
 FROM mitmproxy/mitmproxy:latest
-AUTHOR Michael Ratliff
+
+RUN ln -s /certs /root/.mitmproxy
+
+CMD ["/opt/mitmproxy/mitmproxy"]
+
+
 
